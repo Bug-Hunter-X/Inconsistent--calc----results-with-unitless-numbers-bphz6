@@ -1,0 +1,9 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, if you use `calc()` with a unitless number, the behavior can be unpredictable, leading to unexpected layout or rendering issues. This is because the browser might interpret the unitless number differently depending on the context.  For example:
+
+```css
+.element {
+  width: calc(50% + 10);
+}
+```
+
+In this example, `10` is a unitless number.  The browser might interpret it as `10px`, `10em`, or something else entirely.  This leads to inconsistent results across different browsers and can create hard-to-debug layout problems.
