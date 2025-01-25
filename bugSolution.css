@@ -1,0 +1,9 @@
+To fix this, always explicitly specify the unit for all numbers within the `calc()` function.  This removes ambiguity and ensures consistent results across different browsers.
+
+```css
+.element {
+  width: calc(50% + 10px);
+}
+```
+
+Now, the browser correctly interprets `10px` as 10 pixels, resulting in consistent layout behavior.
